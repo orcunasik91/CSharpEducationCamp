@@ -112,16 +112,111 @@ internal class Program
         #endregion
         #region Example Quaestion
         //Klavyeden 3 basamaklı sayının basamaklarının toplamını yazan kod bloğu
-        Console.Write("Lütfen 3 basamaklı bir sayı giriniz: ");
-        int number = int.Parse(Console.ReadLine());
-        int total = 0;
-        while (number != 0)
+        //Console.Write("Lütfen 3 basamaklı bir sayı giriniz: ");
+        //int number = int.Parse(Console.ReadLine());
+        //int total = 0;
+        //while (number != 0)
+        //{
+        //    total += number % 10;
+        //    number /= 10;
+        //}
+        //Console.Write(total);
+        //Console.Read();
+        #endregion
+        #region Alt alta 10 Adet Yıldız Oluşturma
+        //for (int i = 1; i <= 10; i++)
+        //{
+        //    Console.WriteLine("*");
+        //}
+        //Console.Read();
+        #endregion
+        #region Yanyana 10 Adet Yıldız Oluşturma
+        //for (int i = 1; i <= 10; i++)
+        //{
+        //    Console.Write("*");
+        //}
+        //Console.Read();
+        #endregion
+        #region Alt alta ve Her Satırda 10 Adet Yıldız Oluşturma
+        //for (int i = 1; i <= 10; i++)
+        //{
+        //    for (int j = 1; j < 10; j++)
+        //    {
+        //        Console.Write("*");
+        //    }
+        //    Console.WriteLine("*");
+        //}
+        //Console.Read();
+        #endregion
+        #region Diküçgen Oluşturma
+        //for (int i = 1; i <= 5; i++)
+        //{
+        //    for (int j = 1; j <= i; j++)
+        //    {
+        //        Console.Write("*");
+        //    }
+        //    Console.WriteLine();
+        //}
+        //Console.Read();
+        #endregion
+        #region Ters Diküçgen Oluşturma
+        //for (int i = 5; i >= 1; i--)
+        //{
+        //    for (int j = 1; j <= i; j++)
+        //    {
+        //        Console.Write("*");
+        //    }
+        //    Console.WriteLine();
+        //}
+        //Console.Read();
+        #endregion
+        #region Dik Üçgen Simetresi Oluşturma
+        //for (int i = 1; i <= 5; i++)
+        //{
+        //    for (int j = 1; j <= i; j++)
+        //    {
+        //        Console.Write("*");
+        //    }
+        //    Console.WriteLine();
+        //}
+        //for (int i = 4; i >= 1; i--)
+        //{
+        //    for (int j = 1; j <= i; j++)
+        //    {
+        //        Console.Write("*");
+        //    }
+        //    Console.WriteLine();
+        //}
+        //Console.Read();
+        #endregion
+        #region Baklava Dilimi Oluşturma
+        int n = 5;
+        for (int i = 1; i <= n; i++)
         {
-            total += number % 10;
-            number /= 10;
+            for (int j = n - i; j > 0; j--)
+            {
+                Console.Write(" ");
+            }
+            for (int k = 1; k <= 2*i-1; k++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine();
         }
-        Console.Write(total);
+        for (int i = n-1; i > 0; i--)
+        {
+            for (int j = 1; j <= n - i; j++)
+            {
+                Console.Write(" ");
+            }
+            for (int k = 1; k <= 2 * i - 1; k++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine();
+        }
         Console.Read();
         #endregion
+
     }
 }
